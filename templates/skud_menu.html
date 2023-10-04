@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{{ super }}
+
+{% block body %}
+    <div class="skud_params">
+        <div class="filter_skud">
+            <form action="/Скуд" method="POST">
+                <label>
+                    <input type="month" name="month" max="{{ max_date }}" value="{{ max_date }}"  />
+                </label>
+                <input type="submit" value="Поиск">
+            </form>
+        </div>
+    </div>
+{% endblock %}
